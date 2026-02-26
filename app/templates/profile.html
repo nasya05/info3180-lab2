@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+
+{% block main %}
+<div class="card">
+
+    <div class="top">
+        <img src="{{ url_for('static', filename='girl.webp') }}" alt="Girl" width="250">
+        <h2>Nasya Burrell</h2>
+        <p>@nasya05</p>
+        <p>Kingston, Jamaica</p>
+        <p>Joined {{ date_joined }}</p>
+    </div>
+
+    <div class="content">
+        <p class="bio">
+            I am a passionate and driven individual with a strong interest in technology and web development.
+            As a student of Computer Science, I am constantly learning new skills and improving my problem-solving abilities.
+            I value creativity, teamwork, and continuous growth, and I am always excited to take on new challenges that help me develop both personally and professionally.
+        </p>
+
+        <table class="stats">
+            <tr>
+                <td><strong>7</strong><br>Posts</td>
+                <td><strong>10</strong><br>Following</td>
+                <td><strong>1001</strong><br>Followers</td>
+            </tr>
+        </table>
+
+        <button class="follow-btn">Follow</button>
+    </div>
+
+</div>
+{% endblock %}
